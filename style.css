@@ -372,15 +372,29 @@ footer li img {
     }
 
     .container {
-        max-width: 90%;
+        max-width: 85%;
     }
 
-    #sobre img {
-        max-width: 50%;
+    
+    .sobre .produtos img {
+        margin-right: 0px;
     }
 
     .sobre .produtos a {
         display: block;
-        font-size: 1.2em;
+        font-size: 0.7em;
     }
+
+    .espacamento {
+        margin-bottom: 90%;
+    }
+
+    .produtostodos {    
+        display: grid;
+        grid-template-columns: repeat(2, 46%); /*Remove 2% para que haja espaçamento entre as colunas*/
+        column-gap: 2%;
+        row-gap: 2%;
+        margin-bottom: -80px;
+        justify-content: center;
+    }   
 }
