@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0 0;
+    border-bottom: 3px solid rgb(176,196,222);
+    background-color: rgb(0, 119, 255);
+    color: white;
+    margin-bottom: 56px;
+}
+
+header h1 {
+    width: 100%;
+}
+
+main h3 {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    margin: -20px 0 0px 0;
+}
+
+#explicacaoLoja {
+    font-family: 'Arima', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#valor {
+    color: black;
+}
+
+#valor del {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#desconto {
+    color: green;
+}
+
+header form {
+width: 100%;
+}
+
+header form input {
+    text-align: center;
+}
+
+.submenu {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 6%;
+    width: 160px;
+    top: 100%;
+}
+
+.submenu a {
+    font-family: "Poppins", serif;
+    font-weight: normal;
+}
+
+.submenu li:hover {
+    border: 2px solid rgb(176,196,222);
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li {
+    position: relative; /* Para posicionamento do submenu */
+    padding: 15px 50px; /* Espaço interno para aumentar a área clicável */
+    text-align: center; /* Centraliza o texto dentro do item */
+}
+
+.menu {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens do menu em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.menu a:hover {
+    color: rgb(176,196,222);
+}
+
+.clear-both {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-top: 1px solid rgb(176, 196, 222);
+}
+
+.submenu li {
+    display: block;
+    padding: 6px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30;
+}
+
+.geral img {
+    width: 450px;
+    max-width: 100%;
+}
+
+.sobrenos a {
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+
+.sobrenos img {
+    max-width: 100%;
+}
+
+#sobre {
+    margin-bottom: 56px;
+}
+
+.espacamento {
+    margin-bottom: 120px;
+}
+
+#sobre .sobrenos {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+
+#sobre .sobrenos img {
+    margin-right: 12px;
+}
+
+section h2 {
+    max-width: 100%;
+    border-bottom: 1.5px solid rgb(0, 119, 255);
+    margin-bottom: 35px;
+    font-size: 1.5em;
+}
+
+aside {
+    padding-left: 90px;
+}
+
+aside .sobrenos {
+    margin-bottom: 24px;
+}
+
+.produtostodos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 3%;
+}
+
+.produtos {
+    margin-bottom: 25px;
+}
+
+.produtos img,
+.lancamento img {
+    width: 300px;       /* Define a largura da imagem */
+    height: 300px;      /* Define a altura da imagem */
+    object-fit:scale-down;  /* Faz com que a imagem preencha o espaço sem distorcer */
+}
+
+.lancamento_prod {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 3%;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.formulario {
+    margin-bottom: 56px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Garante que o formulário ocupe 100% da largura do container */
+    margin-top: 20px;
+}
+
+#form-geral {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Faz com que os elementos fiquem em coluna */
+    text-align: center; /* Centraliza o texto no formulário */
+    margin-top: 20px; /* Espaço no topo, se necessário */
+}
+
+
+.form-campo {
+    margin: 12px 0 ;
+    width: 60%;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    border: 1px solid rgb(137, 173, 219);
+    outline: none;
+    text-align: center;
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 100px;
+}
+
+#form-geral button {
+    display: block;
+    width: 30%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(0, 119, 255);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#form-geral button:hover {
+    background-color: rgb(137, 173, 219);
+}
+
+footer {
+    background-color: rgb(0, 119, 255);
+    color: rgb(255, 255, 255);
+}
+
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px 0;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+.error {
+    color: rgba(255, 0, 0, 0.6);
+}
+
+.meu-swal-titulo {
+    display: flex;
+    color: black;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255,0,0);
+    width: 40%;
+}
+
+.meu-swal-titulo {
+    color: #000000; /* Cor do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.meu-swal-popup {
+    border: 2px solid rgb(255, 0, 0);
+    justify-items: center;
+    border-radius: 12px;
+}
+
+.meu-swal-botao {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.meu-swal-botao:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 0, 0);
+}
+
+.meu-swal-titulo2 {
+    display: flex;
+    color: black;
+    justify-content: center;
+    border-bottom: 1px solid rgb(0, 128, 0);
+    width: 40%;
+}
+
+.meu-swal-titulo2 {
+    color: #000000; /* Cor do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.meu-swal-popup2 {
+    border: 2px solid rgb(0, 128, 0);
+    justify-items: center;
+    border-radius: 12px;
+}
+
+.meu-swal-botao2 {
+    background-color: rgb(0, 128, 0);
+    color: rgb(255, 255, 255);
+}
+
+.meu-swal-botao2:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 70, 0);
+}
+
+@media screen and (max-width: 640px) {       /*Para celular*/
+    .conteudo {
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #sobre img {
+        max-width: 50%;
+    }
+
+    .sobre .produtos a {
+        display: block;
+        font-size: 1.2em;
+    }
+}
