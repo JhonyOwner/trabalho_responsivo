@@ -7,6 +7,10 @@ $(document).ready(function() {
     $('#cep').mask('00000-000', {
         placeholder: '012345-678'
     });
+    
+    $('.menu-hamburguer').click(function() {
+        $('.menu').slideToggle();
+    })
 
     $('#form-geral').validate({
         rules: {
