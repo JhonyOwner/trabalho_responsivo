@@ -11,6 +11,23 @@
     margin: 0 auto;
 }
 
+.menu-hamburguer {
+    width: 32px;        /* Tamanho */
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;  /*crossura*/
+    width: 100%; /*largura*/
+    background-color: #fff;
+    display: block; /*aparecer em block*/
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -375,12 +392,16 @@ footer li img {
         max-width: 85%;
     }
 
-    
-    .sobre .produtos img {
+    #sobre .sobrenos {
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+
+    .produtos img {
         margin-right: 0px;
     }
 
-    .sobre .produtos a {
+    .produtos a {
         display: block;
         font-size: 0.7em;
     }
