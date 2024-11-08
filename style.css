@@ -266,6 +266,10 @@ aside .sobrenos {
     object-fit:scale-down;  /* Faz com que a imagem preencha o espaço sem distorcer */
 }
 
+.central {
+    text-align: center;
+}
+
 .lancamento_prod {
     margin-top: 50px;
     display: grid;
