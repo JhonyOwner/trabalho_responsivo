@@ -206,7 +206,7 @@ aside .sobrenos {
     margin-bottom: 24px;
 }
 
-button {
+#searchForm > button {
     margin-top: 12px;
     width: 25%;
     padding: 2px 0;
@@ -218,11 +218,11 @@ button {
     border-radius: 12px;
 }
 
-button:hover {
+#searchForm > button:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-button[type="button"] {
+.center > button[type="button"] {
     display: block;
     margin-top: 12px;
     margin-bottom: 20px;
@@ -238,7 +238,7 @@ button[type="button"] {
     border-radius: 12px;
 }
 
-button[type="button"]:hover {
+.center > button[type="button"]:hover {
     background-color: rgb(137, 173, 219);
 }
 
@@ -464,12 +464,12 @@ footer li img {
     }
 
     .espacamento {
-        margin-bottom: 90%;
+        margin-bottom: 200%;
     }
 
     .produtostodos {    
         display: grid;
-        grid-template-columns: repeat(2, 46%); /*Remove 2% para que haja espaçamento entre as colunas*/
+        grid-template-columns: repeat(1, 96%); /*Remove 2% para que haja espaçamento entre as colunas*/
         column-gap: 2%;
         row-gap: 2%;
         margin-bottom: -80px;
@@ -489,6 +489,9 @@ footer li img {
         margin-bottom: 10px;
     }
 
+    #contato {
+        margin-top: -100%;
+    }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
@@ -531,7 +534,7 @@ footer li img {
 
     .produtostodos {    
         display: grid;
-        grid-template-columns: repeat(3, 30%); /*Remove 2% para que haja espaçamento entre as colunas*/
+        grid-template-columns: repeat(2, 44%); /*Remove 6% para que haja espaçamento entre as colunas*/
         column-gap: 4%;
         row-gap: 2%;
         margin-bottom: -80px;
