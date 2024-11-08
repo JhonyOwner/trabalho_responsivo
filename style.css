@@ -225,6 +225,7 @@ button:hover {
 button[type="button"] {
     display: block;
     margin-top: 12px;
+    margin-bottom: 20px;
     width: 80%;
     padding: 6px 0;
     border: none;
